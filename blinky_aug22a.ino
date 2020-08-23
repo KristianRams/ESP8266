@@ -16,20 +16,20 @@ void setup() {
 void loop() {
   if (x) { 
      digitalWrite(SET_BUILTIN_LED_1, LED_ON);   
-     Serial.printf("Inside 1 x is %d\n",x);
+     //Serial.printf("Inside 1 x is %d\n",x);
   } else { 
      digitalWrite(SET_BUILTIN_LED_2, LED_ON);   
-     Serial.printf("Inside 0 x is %d\n",x);
+     //Serial.printf("Inside 0 x is %d\n",x);
   }
 
   delay(2000);                
 
   if (x) { 
     digitalWrite(SET_BUILTIN_LED_1, LED_OFF);  
-    Serial.printf("Inside 1 x is %d\n",x);
+    //Serial.printf("Inside 1 x is %d\n",x);
   }  else { 
      digitalWrite(SET_BUILTIN_LED_2, LED_OFF);  
-     Serial.printf("Inside 0 x is %d\n",x);
+     //Serial.printf("Inside 0 x is %d\n",x);
    }
   x ^= 1;
   Serial.printf("%d\n",x);
